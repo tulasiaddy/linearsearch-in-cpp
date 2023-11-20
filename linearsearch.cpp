@@ -1,11 +1,11 @@
 // Using RECURSION
 
-/*#include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-int linearsearch(int arr[],int index,int ele)
+int linearsearch(int arr[],int index,int ele)                      // hence it is in int type I'm returning the values
 {
     if(arr[index] == ele){
-        //cout << "element found at index " << index << endl;
+        //cout << "element found at index " << index << endl;     // if the function is void type then I'll uncomment these lines
         return index;
     }
     else if(index == -1){
@@ -23,14 +23,14 @@ int main(){
         cout << "Element is found at " << ans << endl;
     }
     else{cout << "Element is not found";}
-}*/
+}
 
 
 
 
 // Normal Recursion
 
-/*
+
 #include<bits/stdc++.h>
 using namespace std;
 void linearsearch(int arr[], int len, int ele){
@@ -49,11 +49,11 @@ int main(){
     int ele = 900;
     linearsearch(arr, len-1, ele);
 }
-*/
+
 
 // PRACTICE PROBLEMS
 
-/*
+// Max element in the given array
 #include<bits/stdc++.h>
 using namespace std;
 int max_linearsearch(int arr[], int n){
@@ -71,10 +71,10 @@ int main(){
     int ans = max_linearsearch(arr,n);
     cout << "Maximum element in the given array is " << ans << endl;
 }
-*/
+
 
 // Using Recursion
-/*
+
 #include<bits/stdc++.h>
 using namespace std;
 int max_linearsearch(int *arr, int n, int maxi){
@@ -92,11 +92,11 @@ int main(){
     int maxi = -1;
     cout << max_linearsearch(arr, n-1, maxi);
 }
-*/
 
 
 
-// SENTINEL LINEAR SEARCH
+
+// SENTINEL LINEAR SEARCH  ---> in this the last value is modified to the key value and linear search is performed upto last but one elements.
 
 #include<bits/stdc++.h>
 using namespace std;
